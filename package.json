@@ -2,10 +2,16 @@
   "name": "understanding-typescript",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --config webpack.config.prod.js"
+  },
   "repository": "git@github.com:doguskysilva/understanding-typescript.git",
   "author": "Douglas Silva <dogusky.silva@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "lite-server": "^2.5.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
