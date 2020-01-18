@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="tailwind.min.css" />
     <script type="module" src="dist/app.js"></script>
   </head>
-  <body>
+  <body class="bg-gray-300 p-4">
     <template id="project-input">
-      <form>
-        <div class="form-control">
-          <label for="title">Title</label>
-          <input type="text" id="title" />
+      <form class="bg-white border border-indigo-300 shadow-md rounded p-6 mb-4">
+        <div class="mb-2">
+          <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title</label>
+          <input type="text" id="title" class="shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" />
         </div>
-        <div class="form-control">
-          <label for="description">Description</label>
-          <textarea id="description" rows="3"></textarea>
+        <div class="mb-2">
+          <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description</label>
+          <textarea id="description" class="shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" rows="2"></textarea>
         </div>
-        <div class="form-control">
-          <label for="people">People</label>
-          <input type="number" id="people" step="1" min="0" max="10" />
+        <div class="mb-2">
+          <label for="people" class="block text-gray-700 text-sm font-bold mb-2">People</label>
+          <input type="number" id="people" step="1" min="0" max="10" class="shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"/>
         </div>
-        <button type="submit">ADD PROJECT</button>
+        <button type="submit" class="bg-indigo-500 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded">
+          Add Project
+        </button>
       </form>
     </template>
     <template id="single-project">
@@ -34,11 +36,11 @@
       </li>
     </template>
     <template id="project-list">
-      <section class="projects">
-        <header>
-          <h2></h2>
+      <section class="projects bg-white mb-2 shadow-md">
+        <header class="bg-orange-500 p-3">
+          <h2 class="text-center font-bold text-lg text-white"></h2>
         </header>
-        <ul></ul>
+        <ul class="border border-t-0 border-orange-300 p-3"></ul>
       </section>
     </template>
     <div id="app"></div>
