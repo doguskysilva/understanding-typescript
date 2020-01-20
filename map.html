@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Maps Search</title>
+  <link rel="stylesheet" href="tailwind.min.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgIQtMG7gHXflnXdqG5NcjktnbGsY7NzI" async defer></script>
+
+  <script type="module" src="dist/app.js" defer></script>
+</head>
+
+<body class="bg-gray-300 p-4">
+  <div id="app-map" class="bg-white rounded shadow-sm p-2">
+    <div id="map" class="flex justify-center items-center border border-green-500 text-center mx-2 mt-4 rounded h-64">
+      <p>Please enter an address!</p>
+    </div>
+    <form class="p-4 flex -mx-2">
+      <input class="w-5/6 mr-2 px-2 rounded border-2 border-green-300" type="text" id="address">
+      <button class="w-1/6 bg-green-500 hover:bg-green-700 text-white px-3 py-2 rounded" type="submit">Search Address</button>
+    </form>
+  </div>
+</body>
+
+</html>
